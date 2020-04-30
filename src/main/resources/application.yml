@@ -1,2 +1,14 @@
 server:
   port: 9080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xdclass-shiro2?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: zhouzhu
+mybatis:
+  configuration:
+    # 开启控制台打印sql
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # mybatis 下划线转驼峰式配置
+    map-underscore-to-camel-case: true
